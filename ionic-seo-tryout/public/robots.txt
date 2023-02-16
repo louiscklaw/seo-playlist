@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://ionic-seo-tryout.web.app/sitemap.xml
