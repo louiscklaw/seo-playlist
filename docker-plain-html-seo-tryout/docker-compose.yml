@@ -24,10 +24,10 @@ services:
     restart: unless-stopped
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.plainhtml-http.rule=Host(`plainhtml.iamon99.com`)"
-      - "traefik.http.routers.plainhtml-http.entrypoints=web"
-      - "traefik.http.routers.plainhtml-http.middlewares=plainhtml-https"
-      - "traefik.http.middlewares.plainhtml-https.redirectscheme.scheme=https"
-      - "traefik.http.routers.plainhtml.rule=Host(`plainhtml.iamon99.com`)"
-      - "traefik.http.routers.plainhtml.entrypoints=websecure"
-      - "traefik.http.routers.plainhtml.tls.certresolver=myresolver"
+      - "traefik.http.routers.whoamitest-http.rule=Host(`whoamitest.iamon99.com`)"
+      - "traefik.http.routers.whoamitest-http.entrypoints=web"
+      - "traefik.http.routers.whoamitest-http.middlewares=whoamitest-https"
+      - "traefik.http.middlewares.whoamitest-https.redirectscheme.scheme=https"
+      - "traefik.http.routers.whoamitest.rule=Host(`whoamitest.iamon99.com`)"
+      - "traefik.http.routers.whoamitest.entrypoints=websecure"
+      - "traefik.http.routers.whoamitest.tls.certresolver=myresolver"
