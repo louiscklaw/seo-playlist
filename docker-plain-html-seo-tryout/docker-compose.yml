@@ -13,4 +13,4 @@ services:
       - "traefik.http.routers.plain-html-seo-tryout.rule=Host(`plain-html-seo-tryout.iamon99.com`)"
       - "traefik.http.routers.plain-html-seo-tryout.entrypoints=websecure"
       - "traefik.http.routers.plain-html-seo-tryout.tls.certresolver=myresolver"
-      - "traefik.http.services.plain-html-seo-tryout.loadbalancer.server.port=5000"
+      - "traefik.http.services.plain-html-seo-tryout.loadbalancer.server.port=3000"
