@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "serve -s ./public",
     "gitUpdate": "git add . && git commit -m'update,' && git push",
-    "dcub": "docker compose up -d --build"
+    "dcub": "docker compose up -d --build && docker compose logs -f"
   },
   "keywords": [],
   "author": "",
