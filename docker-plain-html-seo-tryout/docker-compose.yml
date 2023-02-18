@@ -7,7 +7,7 @@ services:
     ports:
       - 3000
     restart: always
-    command: sleep infinity
+    command: ./entry.sh
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.plain-html-seo-tryout.rule=Host(`plain-html-seo-tryout.iamon99.com`)"
