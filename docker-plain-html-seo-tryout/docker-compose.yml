@@ -10,14 +10,14 @@ services:
     command: ./entry.sh
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.plainhtml-http.rule=Host(`plainhtml.iamon99.com`)"
-      - "traefik.http.routers.plainhtml-http.entrypoints=web"
-      - "traefik.http.routers.plainhtml-http.middlewares=plainhtml-https"
-      - "traefik.http.middlewares.plainhtml-https.redirectscheme.scheme=https"
-      - "traefik.http.routers.plainhtml.rule=Host(`plainhtml.iamon99.com`)"
-      - "traefik.http.routers.plainhtml.entrypoints=websecure"
-      - "traefik.http.routers.plainhtml.tls.certresolver=myresolver"
-      - "traefik.http.services.plainhtml.loadbalancer.server.port=3000"
+      - "traefik.http.routers.plain-html-seo-tryout-http.rule=Host(`plain-html-seo-tryout.iamon99.com`)"
+      - "traefik.http.routers.plain-html-seo-tryout-http.entrypoints=web"
+      - "traefik.http.routers.plain-html-seo-tryout-http.middlewares=plain-html-seo-tryout-https"
+      - "traefik.http.middlewares.plain-html-seo-tryout-https.redirectscheme.scheme=https"
+      - "traefik.http.routers.plain-html-seo-tryout.rule=Host(`plain-html-seo-tryout.iamon99.com`)"
+      - "traefik.http.routers.plain-html-seo-tryout.entrypoints=websecure"
+      - "traefik.http.routers.plain-html-seo-tryout.tls.certresolver=myresolver"
+      - "traefik.http.services.plain-html-seo-tryout.loadbalancer.server.port=3000"
 
 networks:
   default:
