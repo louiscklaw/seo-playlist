@@ -1,36 +1,23 @@
 services:
-  # test:
-  #   build:
-  #     context: .
-  #   volumes:
-  #     - ./:/app
-  #   ports:
-  #     - 32890:3000
-  #   restart: always
-  #   command: ./entry.sh
-  #   labels:
-  #     - "traefik.enable=true"
-  #     - "traefik.http.routers.plainhtml-http.rule=Host(`plainhtml.iamon99.com`)"
-  #     - "traefik.http.routers.plainhtml-http.entrypoints=web"
-  #     - "traefik.http.routers.plainhtml-http.middlewares=plainhtml-https"
-  #     - "traefik.http.middlewares.plainhtml-https.redirectscheme.scheme=https"
-  #     - "traefik.http.routers.plainhtml.rule=Host(`plainhtml.iamon99.com`)"
-  #     - "traefik.http.routers.plainhtml.entrypoints=websecure"
-  #     - "traefik.http.routers.plainhtml.tls.certresolver=myresolver"
-  #     - "traefik.http.services.plainhtml.loadbalancer.server.port=3000"
-
-  whoami:
-    image: "traefik/whoami"
-    restart: unless-stopped
+  test:
+    build:
+      context: .
+    volumes:
+      - ./:/app
+    ports:
+      - 32890:3000
+    restart: always
+    command: ./entry.sh
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.whoamitest-http.rule=Host(`whoamitest.iamon99.com`)"
-      - "traefik.http.routers.whoamitest-http.entrypoints=web"
-      - "traefik.http.routers.whoamitest-http.middlewares=whoamitest-https"
-      - "traefik.http.middlewares.whoamitest-https.redirectscheme.scheme=https"
-      - "traefik.http.routers.whoamitest.rule=Host(`whoamitest.iamon99.com`)"
-      - "traefik.http.routers.whoamitest.entrypoints=websecure"
-      - "traefik.http.routers.whoamitest.tls.certresolver=myresolver"
+      - "traefik.http.routers.plainhtml-http.rule=Host(`plainhtml.iamon99.com`)"
+      - "traefik.http.routers.plainhtml-http.entrypoints=web"
+      - "traefik.http.routers.plainhtml-http.middlewares=plainhtml-https"
+      - "traefik.http.middlewares.plainhtml-https.redirectscheme.scheme=https"
+      - "traefik.http.routers.plainhtml.rule=Host(`plainhtml.iamon99.com`)"
+      - "traefik.http.routers.plainhtml.entrypoints=websecure"
+      - "traefik.http.routers.plainhtml.tls.certresolver=myresolver"
+      - "traefik.http.services.plainhtml.loadbalancer.server.port=3000"
 
 networks:
   default:
