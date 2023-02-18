@@ -5,7 +5,7 @@ services:
     volumes:
       - ./:/app
     ports:
-      - 3000
+      - 32890:3000
     restart: always
     command: ./entry.sh
     labels:
