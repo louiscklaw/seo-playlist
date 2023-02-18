@@ -13,4 +13,4 @@ services:
       - "traefik.http.routers.plainhtml.rule=Host(`plainhtml.iamon99.com`)"
       - "traefik.http.routers.plainhtml.entrypoints=websecure"
       - "traefik.http.routers.plainhtml.tls.certresolver=myresolver"
-      - "traefik.http.services.plainhtml.loadbalancer.server.port=3000"
+      - "traefik.http.services.plainhtml.loadbalancer.server.port=32890"
