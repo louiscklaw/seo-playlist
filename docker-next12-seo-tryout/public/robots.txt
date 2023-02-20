@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://docker-next12-seo.iamon99.com
+
+# Sitemaps
+Sitemap: https://docker-next12-seo.iamon99.com/sitemap.xml
