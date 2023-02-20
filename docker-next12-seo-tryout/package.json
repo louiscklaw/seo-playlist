@@ -3,6 +3,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "lint": "next lint",
     "prettier_file": "prettier --write \"./pages/**/*.{js,jsx}\"",
     "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest",
     "gitUpdate": "git add . && git commit -m\"update nextjs12-helloworld,\"",
@@ -18,6 +19,8 @@
     "react-dom": "latest"
   },
   "devDependencies": {
+    "eslint": "8.34.0",
+    "eslint-config-next": "13.1.6",
     "prettier": "latest",
     "puppeteer": "latest"
   }
