@@ -6,6 +6,8 @@ export default function Home() {
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
+
+        {/* Duplicate without user-selected canonical */}
         <link rel="canonical" href="https://docker-next12-seo.iamon99.com" />
       </Head>
 
