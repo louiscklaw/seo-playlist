@@ -24,10 +24,10 @@ services:
       - 'traefik.http.routers.docker-next12-seo.tls.certresolver=myresolver'
       - 'traefik.http.services.docker-next12-seo.loadbalancer.server.port=3000'
 
-# networks:
-#   default:
-#     external:
-#       name: traefik-proxy-network
+networks:
+  default:
+    external:
+      name: traefik-proxy-network
 
 volumes:
   next12_node_modules:
